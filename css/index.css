@@ -152,6 +152,30 @@ body {
 .bordering {
   border: 2px solid red;
 }
+.body-fonts h2 {
+  letter-spacing: 0em;
+  font-size: 4.5em;
+  font-weight: 800;
+  text-transform: none;
+}
+.body-fonts p {
+  line-height: 1.5em;
+  font-size: 1.8rem;
+}
+.body-list ul {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.body-list li {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.body-list li:last-child {
+  border: none;
+}
 main h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -219,10 +243,11 @@ main .container nav #nav-container a:hover {
 main .container .header-box {
   height: 100%;
   padding: 5%;
-  background-color: #ccc;
+  background-color: #f2f2f2;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 main .container .header-box img {
   align-self: flex-start;
@@ -231,29 +256,102 @@ main .container .header-box img {
 main .container .header-box hr {
   border-top: 2px dashed grey;
   border-bottom: none;
-  width: 95%;
-  margin-top: 3%;
+  width: 100%;
+  margin: 3% 0;
+  align-self: flex-start;
+}
+main .container .header-box button {
+  width: 20%;
+  background-color: purple;
+  color: white;
+  margin: 3% 0;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 main .container .info-box {
   height: 100%;
-  background-color: red;
   margin: 5% 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-main .container .info-box .left {
-  width: 45%;
-}
-main .container .info-box .left h2 {
+main .container .info-box h2 {
   letter-spacing: 0em;
-  font-size: 4em;
+  font-size: 4.5em;
   font-weight: 800;
   text-transform: none;
 }
-main .container .info-box .left p {
+main .container .info-box p {
   line-height: 1.5em;
+  font-size: 1.8rem;
+}
+main .container .info-box ul {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+main .container .info-box li {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+main .container .info-box li:last-child {
+  border: none;
+}
+main .container .info-box .left {
+  width: 48%;
 }
 main .container .info-box .right {
-  width: 45%;
+  width: 48%;
+}
+main .container .work-history h2 {
+  letter-spacing: 0em;
+  font-size: 4.5em;
+  font-weight: 800;
+  text-transform: none;
+}
+main .container .work-history p {
+  line-height: 1.5em;
+  font-size: 1.8rem;
+}
+main .container .work-history ul {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+main .container .work-history li {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+main .container .work-history li:last-child {
+  border: none;
+}
+main .container .work-history ul {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+}
+main .container .work-history li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .container .work-history li p {
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+main .container .work-history li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+main footer {
+  margin-top: 10%;
+  padding: 5%;
+  width: 100%;
+  background-color: grey;
+  height: 100px;
+  text-align: center;
+  color: white;
 }
